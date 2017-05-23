@@ -1,51 +1,52 @@
 <!doctype html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 <meta charset="UTF-8">
-<title>hello word-hc</title>
-<style>
-.container {
-    position: relative;
-}
-
-.center {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 22px;
-	font-family: 'Handlee', cursive;
-	font-style: italic;
-}
-
-img { 
-    width: 100%;
-    height: auto;
-	filter:blur(5px);
-	-webkit-filter: blur(5px);
-	opacity: 0.6;
-}
-	a{
-		color:black;
-	}
-	a:hover{
-		color: rgba(0,0,0,0.5)
-	}
-	#d{
-		font-size: px
-	}
-</style>
+<title>sten saks papir</title>
 </head>
+
 <body>
+<p>Tap cmd/ctl r to play or play again</p>
+<p>Result:</p>
+<script>
 
+	var userChoice = prompt("Do you choose rock, paper or scissors?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+	computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "paper";
+} else {
+	computerChoice = "scissors";
+} window.alert("Computer: " + computerChoice);
+var compare = function(choice1, choice2) {
+if(choice1 === choice2) {
+         document.write("Its a tie, try again");
+}
 
+else if(choice1 === "rock")
 
-<div class="container">
-  <img src="images/Sunrise-Waterfall-4K-Wallpaper-1440x900.jpg" alt="Norway" width="100%" >
-  <div class="center"><a href="facts-indhold.html"><h2>Opdag en verden af billeder:</h2></a></div>
-</div>
-
+    {if (choice2 === "scissors") { 
+         document.write("Rock wins!");
+    }
+    else{
+       document.write("Paper wins!")
+    }
+}
+    else if (choice1 === "paper")
+    {if (choice2 === "rock")
+    {document.write("Paper wins!")}
+    else{document.write("Scissors wins!")}
+    }
+    
+    else if (choice1 === "scissors")
+    {if (choice2 === "paper")
+    {document.write("Scissors wins!")}
+    else {document.write("Rock wins!")}
+    }
+};
+compare(userChoice, computerChoice)
+	
+	</script>
 </body>
 </html>
