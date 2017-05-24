@@ -2,26 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>sten saks papir</title>
+<title>sten saks papir 2p</title>
 
 </head>
 
 <body>
-<a href="2 player.html">Play it local here...</a>
+<p>Back play against a computer?</p><a href="index.html"> tap here</a>
 <p>Tap cmd/ctl r or just reload the site to play or play again</p>
 <p>IMPORTANT: Don't use capital letters then you are typing</p>
 <p>Result:</p>
 <script>
 
 	var userChoice = prompt("Do you choose rock, paper or scissors?");
-var computerChoice = Math.random();
-if (computerChoice < 0.34) {
-	computerChoice = "rock";
-} else if(computerChoice <= 0.67) {
-	computerChoice = "paper";
-} else {
-	computerChoice = "scissors";
-} window.alert("Computer: " + computerChoice);
+var userChoice2 = prompt("player 2 do you choose rock, paper or scissors?");
 	
 	
 var compare = function(choice1, choice2) {
@@ -53,7 +46,7 @@ else if(choice1 === "rock")
     }}
 	else{document.write("fail")}
 };
-compare(userChoice, computerChoice)
+compare(userChoice, userChoice2)
 	
 	</script>
 </body>
